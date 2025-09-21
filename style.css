@@ -1,0 +1,854 @@
+@font-face {
+    font-family: 'Terminator Genisys' ;
+    src: url(fonts/terminatorgenisys.eot);
+    src: url(fonts/terminatorgenisys.woff2) format('woff2'),
+    url(fonts/terminatorgenisys.woff) format('woff'),
+    url(fonts/terminatorgenisys.ttf) format('truetype'),
+    url(fonts/terminatorgenisys.svg) format('svg');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #E2E2E2;
+    z-index: 10000;
+    height: 85px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0; 
+  gap: 30px; 
+}
+.header-logo{
+    display: flex;
+    font-family: 'Terminator Genisys';
+    align-items: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-right: auto;
+}
+
+.header-nav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.header a{
+    font-family: 'Century Gothic';
+    text-decoration: none;
+    color: black; 
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
+    
+
+}
+
+.header-nav a:hover{
+    border-bottom: 1px solid black;
+}
+.header-link{
+    height: 24px; 
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+.header-actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.header-contacts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.header-phone{
+    display: flex;
+    align-items: center;
+    width: 156px;
+    height: 18px;
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    font-size: 18px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #505050;
+    line-height: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header-button{
+    padding: 15px 30px;
+    gap: 10px;
+    background-color: #505050;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header-button:hover{
+    background-color:  #6f6d6d;
+}
+
+.intro{
+    /* background-image: url(img/Img1.png); */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 46px);
+    transition: 0.6s ease-in-out; 
+    background-size: cover;
+    /* padding: 20px; */
+}
+
+
+.intro-title{
+    font-family: 'Century Gothic' ;
+    font-weight: 550;
+    font-size: 55px;
+    color: white;
+    margin-left: 100px; 
+    padding-top: 150px; 
+    margin-bottom: 16px;
+}
+
+.intro-subtitle{
+    font-family: 'Century Gothic' ;
+    font-weight: 400;
+    font-size: 18px;
+    color: #E2E2E2;
+    margin-left: 100px; 
+   
+}
+
+.intro-button{
+    padding: 15px 30px;
+    margin-left: 100px; 
+    background-color: #505050;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 27px;
+}
+
+.intro-button:hover{
+    background-color:  #6f6d6d;
+}
+.stats{
+    display: flex;
+    margin-left: 100px; 
+    gap: 44px;
+    margin-top: 27px;
+    flex-wrap: wrap;
+}
+
+.stats-card{
+    gap: 44px;
+}
+
+.stats-nember{
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.stats-description{
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    font-size: 18px;
+    color: #E2E2E2;
+}
+.popular-models {
+    scroll-margin-top: 85px; 
+}
+
+.models-text{
+    gap: 16px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 0 20px; 
+}
+
+.models-title{
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 45px;
+    color:  #6f6d6d;
+    margin-bottom: 16px;
+}
+
+.models-description{
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.doors-models{
+    display: flex;
+    margin: 44px 44px 25px 44px;
+    gap: 44px;
+    /* justify-content: center; */
+}
+
+.door-card{
+    flex: 1;
+    min-width: 300px;
+    max-width: 435px;
+}
+
+.door-inf{
+    display: flex;
+    margin-top: 25px;
+}
+
+.door-inf-text{
+    width: 330px;
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+}
+
+.button-door-price{
+    width: 114px;
+    height: 50px;
+    padding: 12px 24px;
+    margin-left: 12px;
+    background-color: #505050;
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-door-price:hover{
+     background-color: black;
+}
+
+
+.models-vector-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-left{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #505050;
+    margin-right: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.button-right{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0C0C0C;
+    margin-left: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.about-company{
+    background-color: #F1EFF0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 110px;
+    background-image: url(img/карта.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    scroll-margin-top: 85px;
+}
+
+.text-company{
+    margin-left: 100px;
+    padding-top: 30px;
+}
+
+.title-text-company{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color:  #6f6d6d;
+    margin-bottom: 16px;
+}
+
+span.black-text{
+    color:black
+}
+
+.description-text-company{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    font-weight: 400;
+    color:  black;
+    margin-top: 16px;
+}
+
+.stats-company{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+
+.colums1, .colums2{
+    display: flex;
+    margin-left: 100px;
+    gap: 90px;
+}
+
+
+.stats-block{
+    width: 300px;
+    min-width: 250px;
+}
+
+.title-colums{
+    font-family: 'Century Gothic';
+    font-size: 35px;
+    font-weight: 600;
+    color:  #505050;
+    margin-bottom: 16px
+}
+
+.description-colums{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color:  #505050;
+    background-position: right;
+
+}
+
+.about-company-button{
+    padding: 15px 30px;
+    margin-left: 100px; 
+    background-color: #505050;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 44px;
+}
+
+.about-company-button:hover{
+    background-color:  #6f6d6d;
+}
+
+.orders-steps{
+    background-color: #F1EFF0;
+    padding: 90px 50px;
+    scroll-margin-top: 65px;
+}
+
+.center-orders{
+    display: flex;
+    background-color: white;
+    border-radius: 16px ;
+    padding: 40px 30px 30px 60px ;
+    
+}
+
+.article-button{
+    padding: 15px 30px;
+    background-color: #505050;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 44px
+}
+.article-button:hover{
+    background-color:  #6f6d6d;
+}
+
+.text-orders{
+  align-self: flex-start;
+  margin-left: 44px;
+}
+
+.orders-text-company{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color:  #6f6d6d;
+    margin-bottom: 16px;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+.stats-orders-steps{
+    display: flex;
+    margin-top: 30px;
+    gap: 24px;
+}
+
+.step{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color:  #E2E2E2;
+}
+
+.title-steps{
+    font-family: 'Century Gothic';
+    font-size: 25px;
+    font-weight: 600;
+    color:  #0C0C0C;
+    margin-top: 24px;
+}
+
+.description-steps{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+    margin-top: 16px;
+}
+
+.catalog{
+    display: flex;
+    background-color: #F1EFF0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 0 100px 80px 100px;
+    scroll-margin-top: 85px;
+}
+
+.article-catalog{
+    margin-right: 44px;
+    position: sticky;
+    top: 70px;
+    height: 100%;
+}
+
+
+.article-catalog-text{
+    margin-bottom: 44px;
+}
+
+.title-catalog-text{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color:  #6f6d6d;
+    margin-bottom: 16px;
+}
+
+.description-catalog{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    font-weight: 400;
+    color:  #0C0C0C;
+}
+
+.catalog-inf{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.plashka{
+    border-radius: 16px;
+    border: 1px;
+    border: #E2E2E2;
+    padding: 20px 40px;
+    margin-bottom: 16px;
+}
+
+.plashka5{
+    border-radius: 16px;
+    border: 1px;
+    border: #E2E2E2;
+    padding: 20px 40px;
+}
+
+.title-plashka{
+    font-family: 'Century Gothic';
+    font-size: 22px;
+    font-weight: 600;
+    color:  #0C0C0C;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.description-plashka{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color:  #505050;
+    margin-bottom: 24px;
+}
+
+.button-plashka{
+    border-radius: 12px;
+    padding: 16px 32px;
+    background-color:#505050;
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.plashka:hover{
+    background-color: white;
+}
+
+.plashka5:hover{
+    background-color: white;
+}
+
+.plashka:hover .button-plashka{
+    background-color: black;
+}
+
+.plashka5:hover .button-plashka{
+    background-color: black;
+}
+
+.contacts-questions{
+    padding: 90px 100px 79px 100px ;
+}
+
+.center-block__contacts-questions{
+    display: flex;
+    align-items: stretch;
+    gap: 34px;
+}
+
+.header__contacts-questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__contacts-questions{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color:  #6f6d6d;
+}
+
+.description__contacts-questions{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color:  black;
+}
+
+.article-contacts{
+    background-color: #F1EFF0;
+    border-radius: 16px;
+    padding: 30px 50px;
+    margin-bottom: 34px;
+}
+
+.form-contacts__name,
+.form-contacts__phone {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-contacts{
+    display: flex;
+    gap: 16px;  
+    margin-bottom: 24px;
+}
+
+
+.description__form-contacts-name{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+    margin-bottom: 16px;
+}
+
+.input__name,
+.input__phone,
+.input__messages{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+}
+
+.description__form-contacts-phone{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+    margin-bottom: 16px;
+}
+
+.form-messages{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+.description__form-messages{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+    margin-bottom: 16px;
+}
+
+.input__checkbox{
+    font-family: 'Century Gothic';
+    font-size: 10px;
+    font-weight: 400;
+    accent-color: black;
+    margin-bottom: 16px;
+}
+
+.gray-text{
+    color: #95999F ;
+}
+
+.black-line-text{
+    color: black;
+    text-decoration-line: underline ;
+}
+
+.button__form-contacts{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.article-contacts__inf{
+    background-color: #F1EFF0;
+    border-radius: 16px;
+    padding: 30px 50px;
+    scroll-margin-top: 90px;
+}
+
+.block-adress,
+.block-phone{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.block-email{
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.card-adress__contacts-inf{
+    margin-right: 40px;
+}
+
+.card-phone__contacts-inf{
+    margin-right: 16px;
+}
+
+.card-email__contacts-inf{
+    margin-right: 53px;
+}
+
+.name__block-contacts-inf{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+}
+
+.content__block-contacts-inf{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #0C0C0C;
+}
+
+.social__block-media{
+    margin-top: 16px;
+    display: flex;
+    gap: 18px;
+}
+
+.block-questions{
+    background-color: #F1EFF0;
+    border-radius: 16px;
+    padding: 30px 50px;
+    flex: 1;
+}
+
+.title-question{
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    font-weight: 600;
+    color: #505050;
+}
+
+.card-question{
+    padding-top: 48.3;
+    padding-bottom: 48.3;
+    border-bottom: 1px solid #95999F;
+}
+
+.footer{
+    background-color: #F1EFF0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 45px 100px 27px 100px;
+    margin: 20px 20px 0 20px;    
+}
+
+.footer__main-block{
+    border-bottom: 1px solid #95999F;
+    padding-bottom: 44px;
+}
+
+.footer__header-block{
+    margin-bottom: 44px;
+
+}
+
+.footer-title__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+    align-items: center;
+}
+
+
+.footer__logo{
+    font-family: 'Terminator Genisys';
+    align-items: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 0;
+    color: #0C0C0C;
+}
+
+.footer__title-text{
+    font-family: 'Century Gothic';
+    font-size: 45px;
+    font-weight: 600;
+    color: #505050;
+}
+
+.footer__button{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;   
+}
+.footer__nav{
+    display: flex;
+    gap: 44px;
+}
+
+.footer-link{
+    font-family: 'Century Gothic';
+    text-decoration: none;
+    color: black; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer_bottom__description{
+    font-family: 'Century Gothic';
+    color: #505050; 
+    font-size: 18px;
+    font-weight: 400;
+}
+
