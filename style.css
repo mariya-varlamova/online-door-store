@@ -478,7 +478,7 @@ span.black-text{
     background-color: #F1EFF0;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    padding: 0 100px 80px 100px;
+    padding: 0 60px 80px 100px;
     scroll-margin-top: 85px;
 }
 
@@ -513,7 +513,7 @@ span.black-text{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
 }
 
 .plashka{
@@ -521,15 +521,8 @@ span.black-text{
     border: 1px;
     border: #E2E2E2;
     padding: 20px 40px;
-    margin-bottom: 16px;
 }
 
-.plashka5{
-    border-radius: 16px;
-    border: 1px;
-    border: #E2E2E2;
-    padding: 20px 40px;
-}
 
 .title-plashka{
     font-family: 'Century Gothic';
@@ -563,15 +556,8 @@ span.black-text{
     background-color: white;
 }
 
-.plashka5:hover{
-    background-color: white;
-}
 
 .plashka:hover .button-plashka{
-    background-color: black;
-}
-
-.plashka5:hover .button-plashka{
     background-color: black;
 }
 
@@ -774,24 +760,24 @@ span.black-text{
     background-color: #F1EFF0;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    padding: 45px 100px 27px 100px;
+    padding: 25px 100px 25px 100px;
     margin: 20px 20px 0 20px;    
 }
 
 .footer__main-block{
     border-bottom: 1px solid #95999F;
-    padding-bottom: 44px;
+    padding-bottom: 40px;
 }
 
 .footer__header-block{
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 
 }
 
 .footer-title__top{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     align-items: center;
 }
 
@@ -807,7 +793,7 @@ span.black-text{
 
 .footer__title-text{
     font-family: 'Century Gothic';
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     color: #505050;
 }
