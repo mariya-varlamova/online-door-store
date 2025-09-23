@@ -308,5 +308,40 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <div class="modal-overlay" id="modalForm">
+        <div class="modal-content">
+            <span class="close-btn">&times</span>
+            <div class="modal-title">
+                <h2 class="modal-title__text">Заполните форму</h2>
+                <p class="modal-title__description">И мы вам перезвоним!</p>
+            </div>
+            <form class="application-form">
+                    <div class="modal__form-contacts">
+                        <div class="modal__formContacts-name">
+                            <label class="modal-name">Имя</label>
+                            <input class="modal-input__name" type="text" placeholder="Ваше имя" name="username" id="username">
+                        </div>
+                        <div class="modal__formContacts-phone">
+                            <label class="modal-phone">Телефон</label>
+                            <input class="modal-input__phone" type="tel" placeholder="+7 (999) 999-99-99">
+                        </div>
+                    </div>
+                    <div class="modal__form-messages">
+                        <label class="modal-messages">Сообщение</label>
+                        <textarea class="modal-input__messages" type="text" placeholder="Напишите нам" name="messages"></textarea>
+                    </div>
+                    <div class="modal__checkbox-button">
+                        <input class="modal-input__checkbox" type="checkbox"> <span class="gray-text">Я согласен(а) c <span class="black-line-text"> политикой конфиденциальности</span> и даю согласие на обработку персональных данных</span><br>
+                        <div class="modal-footer">
+                            <button type="submit" class="submit-btn">Оставить заявку</button>
+                            <div class="modal-social">
+                                <a class="modal-telegram" href="#"><img src="img/Telegram.png" alt="telegram" width="24" height="24"></a>
+                                <a class="modal-whatsapp" href="#"><img src="img/Whatsapp.png" alt="whatsapp" width="24" height="24" ></a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

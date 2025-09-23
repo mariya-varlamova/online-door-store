@@ -29,7 +29,7 @@ html{
     width: 100%;
     background: white;
     border-bottom: 1px solid #E2E2E2;
-    z-index: 10000;
+    z-index: 1000;
     height: 85px;
 }
 
@@ -612,7 +612,8 @@ span.black-text{
 }
 
 
-.description__form-contacts-name{
+.description__form-contacts-name,
+.description__form-contacts-phone{
     font-family: 'Century Gothic';
     font-size: 16px;
     font-weight: 400;
@@ -633,14 +634,6 @@ span.black-text{
     font-size: 16px;
     font-weight: 400;
     color: #95999F;
-}
-
-.description__form-contacts-phone{
-    font-family: 'Century Gothic';
-    font-size: 16px;
-    font-weight: 400;
-    color: #95999F;
-    margin-bottom: 16px;
 }
 
 .form-messages{
@@ -838,3 +831,133 @@ span.black-text{
     font-weight: 400;
 }
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #F1EFF0;
+    padding: 30px 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title__text{
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.modal-title__description{
+     font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color:  black;
+}
+
+.modal__form-contacts{
+    display: flex;
+    gap: 16px;  
+    margin-bottom: 24px;
+}
+
+.modal__formContacts-name,
+.modal__formContacts-phone{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.modal-name,
+.modal-phone{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+    margin-bottom: 16px;
+}
+
+.modal-input__name,
+.modal-input__phone,
+.modal-input__messages{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+}
+.modal__form-messages{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+.modal-messages{
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 400;
+    color: #95999F;
+    margin-bottom: 16px;
+}
+
+.modal-input__checkbox{
+    font-family: 'Century Gothic';
+    font-size: 10px;
+    font-weight: 400;
+    accent-color: black;
+    margin-bottom: 16px;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.submit-btn{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Century Gothic';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.modal-social{
+    gap: 18px;
+}
