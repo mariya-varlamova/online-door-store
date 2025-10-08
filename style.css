@@ -579,7 +579,7 @@ span.black-text{
 
 .title__contacts-questions{
     font-family: 'Century Gothic';
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     color:  #6f6d6d;
 }
@@ -598,6 +598,11 @@ span.black-text{
     margin-bottom: 34px;
 }
 
+.article__contacts-questions {
+    flex: 0 1 60%; 
+}
+
+
 .form-contacts__name,
 .form-contacts__phone {
     display: flex;
@@ -615,7 +620,7 @@ span.black-text{
 .description__form-contacts-name,
 .description__form-contacts-phone{
     font-family: 'Century Gothic';
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #95999F;
     margin-bottom: 16px;
@@ -627,11 +632,11 @@ span.black-text{
     background-color: white;
     border-radius: 10px;
     border: none;
-    padding: 15px;
+    padding: 14px;
     width: 100%;
     box-sizing: border-box;
     font-family: 'Century Gothic';
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #95999F;
 }
@@ -644,7 +649,7 @@ span.black-text{
 
 .description__form-messages{
     font-family: 'Century Gothic';
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #95999F;
     margin-bottom: 16px;
@@ -677,6 +682,7 @@ span.black-text{
     font-size: 18px;
     border-radius: 12px;
     cursor: pointer;
+    margin-top: 16px;
 }
 
 .article-contacts__inf{
@@ -689,12 +695,11 @@ span.black-text{
 .block-adress,
 .block-phone{
     display: flex;
-    margin-bottom: 16px;
 }
 
 .block-email{
     display: flex;
-    margin-bottom: 44px;
+    margin-bottom: 14px;
 }
 
 .card-adress__contacts-inf{
@@ -733,7 +738,7 @@ span.black-text{
     background-color: #F1EFF0;
     border-radius: 16px;
     padding: 30px 50px;
-    flex: 1;
+    flex: 0 1 40%;
 }
 
 .title-question{
@@ -747,6 +752,10 @@ span.black-text{
     padding-top: 48.3;
     padding-bottom: 48.3;
     border-bottom: 1px solid #95999F;
+}
+
+.card-question:last-child {
+    border-bottom: none;
 }
 
 .footer{
@@ -908,7 +917,7 @@ span.black-text{
 .modal-input__messages{
     background-color: white;
     border-radius: 10px;
-    border: none;
+    border: 2px solid #e0e0e0;
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -916,7 +925,15 @@ span.black-text{
     font-size: 16px;
     font-weight: 400;
     color: #95999F;
+    transition: border-color 0.3s ease;
 }
+
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 .modal__form-messages{
     display: flex;
     flex-direction: column;

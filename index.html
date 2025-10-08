@@ -231,7 +231,7 @@
                                 <div class="card-adress__contacts-inf">
                                     <p class="name__block-contacts-inf">Адрес:</p><br>
                                 </div>
-                                <p class="content__block-contacts-inf">г. Владивосток, <br>пр-т. 100-летия Владивостока, 43</p>
+                                <p class="content__block-contacts-inf">г. Владивосток, пр-т. 100-летия Владивостока, 43</p>
                             </div>
                             <div class="block-phone">
                                 <div class="card-phone__contacts-inf">
@@ -244,9 +244,6 @@
                                     <p class="name__block-contacts-inf">Email:</p><br>
                                 </div>
                                 <p class="content__block-contacts-inf">sdfb@gmail.com</p>
-                            </div>
-                            <div>
-                                
                             </div>
                         </div>
                         <div class="block-media__contacts-inf">
@@ -307,7 +304,6 @@
             </section>
         </footer>
     </div>
-    <script src="js/script.js"></script>
     <div class="modal-overlay" id="modalForm">
         <div class="modal-content">
             <span class="close-btn">&times</span>
@@ -331,7 +327,9 @@
                         <textarea class="modal-input__messages" type="text" placeholder="Напишите нам" name="messages"></textarea>
                     </div>
                     <div class="modal__checkbox-button">
-                        <input class="modal-input__checkbox" type="checkbox"> <span class="gray-text">Я согласен(а) c <span class="black-line-text"> политикой конфиденциальности</span> и даю согласие на обработку персональных данных</span><br>
+                        <div class="checkbox-wrapper">
+                            <input class="modal-input__checkbox" type="checkbox"><span class="gray-text">Я согласен(а) c <span class="black-line-text"> политикой конфиденциальности</span> и даю согласие на обработку персональных данных</span><br>
+                        </div>
                         <div class="modal-footer">
                             <button type="submit" class="submit-btn">Оставить заявку</button>
                             <div class="modal-social">
@@ -343,5 +341,6 @@
             </form>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

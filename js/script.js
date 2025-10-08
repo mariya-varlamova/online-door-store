@@ -99,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     closeBtn.addEventListener('click', function() {
         modal.style.display = 'none';
+        form.reset();
+        clearErrors();
         enableScroll()
        
     });
@@ -114,9 +116,82 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Форма отправлена!');
-        modal.style.display = 'none';
-        enableScroll();
+        clearErrors();
+
+         const isValid = validateForm();
+
+         if (isValid) {
+            alert('Форма отправлена!');
+            modal.style.display = 'none';
+            enableScroll();
+            form.reset(); 
+    }
+    });
+
+    function validateForm() {
+        let isValid = true;
+        
+        const nameInput = document.querySelector('.modal-input__name');
+        if (!nameInput.value.trim() || nameInput.value.trim().length === 0) {
+            showError(nameInput, 'Введите ваше имя');
+            isValid = false;
+        }
+        
+        const phoneInput = document.querySelector('.modal-input__phone');
+        const phoneRegex = /^\+7\s?[\(]?\d{3}[\)]?\s?\d{3}[\-]?\d{2}[\-]?\d{2}$/;
+        if (!phoneRegex.test(phoneInput.value.trim())) {
+            showError(phoneInput, 'Введите корректный номер телефона');
+            isValid = false;
+        }
+        
+        const checkbox = document.querySelector('.modal-input__checkbox');
+        if (!checkbox.checked) {
+            showError(checkbox, 'Необходимо согласие с политикой конфиденциальности');
+            isValid = false;
+        }
+        
+        return isValid;
+    }
+
+    function showError(input, message) {
+        const existingError = input.parentNode.querySelector('.error-message');
+        if (existingError) {
+            existingError.remove();
+        }
+        
+        input.style.borderColor = '#ff0000';
+        
+
+        const errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.style.color = '#ff0000';
+        errorElement.style.fontSize = '14px';
+        errorElement.style.fontFamily = 'Century Gothic';
+        errorElement.style.marginTop = '5px';
+        errorElement.textContent = message;
+        
+        input.parentNode.appendChild(errorElement);
+    }
+
+    function clearErrors() {
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(error => error.remove());
+        
+        const inputs = document.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.style.borderColor = '';
+        });
+    }
+
+    const inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('input', function() {
+            this.style.borderColor = '';
+            const error = this.parentNode.querySelector('.error-message');
+            if (error) {
+                error.remove();
+            }
+        });
     });
 });
 
